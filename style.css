@@ -935,13 +935,6 @@ select {
     justify-content: flex-start;
   }
 }
-
-/* =========================================================
-   RESPONSIVE DESIGN
-   Original styles above are kept unchanged.
-   These rules only improve responsiveness.
-   ========================================================= */
-
 @media (max-width: 1200px) {
   .nav-links {
     width: 100%;

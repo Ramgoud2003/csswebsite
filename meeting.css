@@ -942,7 +942,6 @@ select {
     font-size: 15px;
   }
 }
-/* RESPONSIVE OVERRIDES ONLY - original CSS above is unchanged */
 @media (max-width: 1100px) {
   .side-card {
     width: calc(100% - 40px);
