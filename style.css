@@ -935,3 +935,443 @@ select {
     justify-content: flex-start;
   }
 }
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   Original styles above are kept unchanged.
+   These rules only improve responsiveness.
+   ========================================================= */
+
+@media (max-width: 1200px) {
+  .nav-links {
+    width: 100%;
+    padding: 0 20px;
+    gap: 18px;
+  }
+  .nav-links a {
+    font-size: 15px;
+  }
+  .checkboxes {
+    width: min(95%, 1000px);
+  }
+  .destinations {
+    padding: 20px 4%;
+  }
+  .destinations button {
+    margin-left: auto;
+  }
+  .destns-img {
+    gap: 15px;
+  }
+  .destns-img > div {
+    flex: 1;
+    min-width: 0;
+  }
+  .destns-img img {
+    width: 100%;
+    height: 430px;
+    margin: 20px 0;
+  }
+  .side-card {
+    margin: 30px 4%;
+  }
+  .pic {
+    flex: 1;
+  }
+  .pic img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+  }
+  .contnt {
+    flex: 1;
+    left: 40px;
+  }
+  .deal-sec,
+  .guarantee-sec,
+  .benifit-sec {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav-links {
+    height: auto;
+    min-height: 90px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px 20px;
+    gap: 15px;
+  }
+  .logo-icon {
+    margin-right: 10px;
+  }
+  .booking-sec {
+    height: auto;
+    padding: 18px 15px;
+  }
+  .checkboxes {
+    width: 100%;
+    max-width: 760px;
+    height: auto;
+    min-height: 60px;
+    flex-wrap: wrap;
+    padding: 8px;
+  }
+  .checkboxes select,
+  .checkboxes input,
+  .checkboxes label {
+    flex: 1 1 180px;
+    width: auto;
+  }
+  #btn1 {
+    flex: 1 1 160px;
+  }
+  .img-scroll,
+  .frst {
+    height: 550px;
+  }
+  .frst h1 {
+    font-size: clamp(38px, 6vw, 52px);
+  }
+  .frst p {
+    width: 80%;
+    font-size: 16px;
+  }
+  .frst button {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .frst button:hover {
+    transform: translateX(-50%) translateY(-2px);
+  }
+  .destinations p {
+    font-size: 32px;
+  }
+  .destns-img {
+    overflow-x: auto;
+    padding-bottom: 15px;
+    scrollbar-width: none;
+  }
+  .destns-img > div {
+    min-width: 260px;
+  }
+  .destns-img img {
+    height: 400px;
+  }
+  .side-card {
+    align-items: center;
+  }
+  .pic img {
+    height: 300px;
+  }
+  .contnt {
+    top: 0;
+    left: 25px;
+  }
+  .contnt h1 {
+    font-size: 32px;
+  }
+  .contnt p {
+    font-size: 16px;
+  }
+  .deals-header h2,
+  .guart-header h2,
+  .benifit-header h2 {
+    font-size: 36px;
+  }
+  .deal-card {
+    width: 650px;
+  }
+  .guart-cotnr,
+  .benifit-cotnr {
+    overflow-x: auto;
+    padding-bottom: 15px;
+    scrollbar-width: none;
+  }
+  .guart-card,
+  .benifit-card {
+    min-width: 400px;
+  }
+  .benifit-header,
+  .guart-header {
+    gap: 20px;
+  }
+  .benifit-button,
+  .guart-button {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-links {
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    padding: 18px 12px;
+    gap: 12px;
+  }
+  .logo-icon {
+    margin-bottom: 5px;
+  }
+  .nav-links a {
+    font-size: 15px;
+  }
+  .nav-links button {
+    width: 120px;
+  }
+  .booking-sec {
+    width: 100%;
+    padding: 15px 12px;
+  }
+  .checkboxes {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 12px;
+    gap: 8px;
+  }
+  .checkboxes select,
+  .checkboxes input,
+  .checkboxes label {
+    width: 100%;
+    flex: none;
+    height: 50px;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+  }
+  #btn1 {
+    width: 100%;
+    height: 50px;
+    flex: none;
+  }
+  .img-scroll,
+  .frst {
+    height: 500px;
+  }
+  .frst h1 {
+    top: 42%;
+    width: 90%;
+    font-size: clamp(30px, 9vw, 40px);
+  }
+  .frst p {
+    top: 62%;
+    width: 85%;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .frst button {
+    top: 76%;
+    left: 50%;
+    padding: 12px 25px;
+  }
+  .destinations {
+    padding: 20px 15px;
+  }
+  .destinations p {
+    padding: 10px 0;
+    margin: 0;
+    font-size: 26px;
+  }
+  .destinations button {
+    margin: 5px 0 10px auto;
+    display: block;
+  }
+  .destns-img {
+    flex-direction: column;
+    overflow: visible;
+    margin: 0;
+    gap: 0;
+  }
+  .destns-img > div {
+    width: 100%;
+    min-width: 0;
+  }
+  .destns-img img {
+    width: 100%;
+    height: 420px;
+    margin: 10px 0;
+  }
+  .delhi p,
+  .benguluru p,
+  .mumbai p {
+    bottom: 75px;
+    left: 20px;
+    width: 145px;
+    padding: 12px 20px;
+    font-size: 17px;
+  }
+  .side-card {
+    flex-direction: column;
+    margin: 20px 15px;
+    align-items: stretch;
+  }
+  .pic img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+  }
+  .contnt {
+    top: 0;
+    left: 0;
+    padding: 20px 5px;
+  }
+  .contnt h1 {
+    font-size: 30px;
+  }
+  .contnt p {
+    font-size: 15px;
+  }
+  .contnt button {
+    width: 145px;
+  }
+  .deal-sec,
+  .guarantee-sec,
+  .benifit-sec {
+    margin: 30px 15px;
+  }
+  .deals-header,
+  .guart-header,
+  .benifit-header {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    gap: 15px;
+  }
+  .deals-header h2,
+  .guart-header h2,
+  .benifit-header h2 {
+    font-size: 30px;
+  }
+  .deal-buttons {
+    align-self: flex-end;
+  }
+  .deal-cotnr {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 15px;
+  }
+  .deal-card {
+    width: 88vw;
+    max-width: 500px;
+    height: 220px;
+  }
+  .deal-card h1 {
+    width: 48%;
+    padding: 18px;
+    font-size: 22px;
+  }
+  .deal-card img {
+    width: 52%;
+  }
+  .guarantee-sec > p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .guart-cotnr,
+  .benifit-cotnr {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 15px;
+  }
+  .guart-card,
+  .benifit-card {
+    min-width: 88vw;
+    width: 88vw;
+    max-width: 500px;
+    margin-right: 0;
+    height: 210px;
+  }
+  .guart-card .card h2,
+  .benifit-card .card h2 {
+    padding: 20px 15px 10px;
+    font-size: 20px;
+  }
+  .guart-card .card p,
+  .benifit-card .card p {
+    padding-left: 15px;
+    padding-right: 10px;
+    font-size: 14px;
+  }
+  .guart-card img,
+  .benifit-card img {
+    width: 100px;
+    height: 80px;
+    margin: 45px 10px 0;
+  }
+  .guart-button,
+  .benifit-button {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .benifit-button .btn {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 400px) {
+  .logo-icon {
+    width: 44px;
+    height: 44px;
+  }
+  .logo-icon span {
+    font-size: 24px;
+  }
+  .logo-icon p {
+    font-size: 14px;
+    margin-left: 15px;
+  }
+  .nav-links a {
+    font-size: 14px;
+  }
+  .img-scroll,
+  .frst {
+    height: 450px;
+  }
+  .frst h1 {
+    top: 40%;
+    font-size: 29px;
+  }
+  .frst p {
+    top: 62%;
+    font-size: 13px;
+  }
+  .frst button {
+    top: 77%;
+    padding: 10px 22px;
+  }
+  .destinations p {
+    font-size: 23px;
+  }
+  .destns-img img {
+    height: 350px;
+  }
+  .deal-card {
+    width: 92vw;
+    height: 200px;
+  }
+  .deal-card h1 {
+    font-size: 19px;
+    padding: 15px;
+  }
+  .guart-card,
+  .benifit-card {
+    min-width: 92vw;
+    width: 92vw;
+  }
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+img {
+  max-width: 100%;
+}
